@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>LinkedIn Clone</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+    <header class="header">
+        <div class="header-left">
+            <a href="#" class="logo" aria-label="LinkedIn">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 34 34" width="28" height="28" fill="#0A66C2">
+                    <path d="M34,20.5v10.8h-6.9V21.3c0-2.3-0.8-3.8-2.7-3.8c-1.5,0-2.4,1-2.8,2c-0.1,0.3-0.1,0.7-0.1,1.1v10.1h-6.9c0,0,0.1-16.4,0-18.1h6.9v2.6c0.9-1.4,2.5-3.4,6.1-3.4C31.1,14.6,34,16.7,34,20.5zM4.1,7.1C1.5,7.1,0,8.9,0,11.5c0,2.4,1.4,4.3,3.7,4.3h0c2.7,0,4.1-1.9,4.1-4.3C7.8,8.9,6.3,7.1,4.1,7.1zM0.2,31.3h7.8V13.2H0.2V31.3z"/>
+                </svg>
+            </a>
+            <div class="search-bar">
+                <input type="text" placeholder="Pesquisar" aria-label="Pesquisar" />
+            </div>
+        </div>
+        <nav class="header-nav">
+            <a href="#" class="nav-item active" aria-current="page" title="Início">
+                <svg width="24" height="24" fill="currentColor" aria-hidden="true"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
+                <span>Início</span>
+            </a>
+            <a href="#" class="nav-item" title="Minha rede">
+                <svg width="24" height="24" fill="currentColor" aria-hidden="true"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
+                <span>Minha rede</span>
+            </a>
+            <a href="#" class="nav-item" title="Vagas">
+                <svg width="24" height="24" fill="currentColor" aria-hidden="true"><path d="M6 2h12v2H6zM4 6h16v2H4zM6 10h12v2H6zM4 14h16v2H4zM6 18h12v2H6z"/></svg>
+                <span>Vagas</span>
+            </a>
+            <a href="#" class="nav-item" title="Mensagens">
+                <svg width="24" height="24" fill="currentColor" aria-hidden="true"><path d="M20 2H4c-1.1 0-2 .9-2 2v16l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z"/></svg>
+                <span>Mensagens</span>
+            </a>
+            <a href="#" class="nav-item" title="Notificações">
+                <svg width="24" height="24" fill="currentColor" aria-hidden="true"><path d="M12 22c1.1 0 2-.9 2-2h-4a2 2 0 0 0 2 2zm6-6v-5c0-3.07-1.63-5.64-4.5-6.32V4a1.5 1.5 0 0 0-3 0v.68C7.63 5.36 6 7.92 6 11v5l-2 2v1h16v-1l-2-2z"/></svg>
+                <span>Notificações</span>
+            </a>
+            <div class="nav-item profile-menu" tabindex="0" aria-haspopup="true" aria-expanded="false" aria-label="Eu">
+                <div class="profile-circle">G</div>
+                <span>Eu</span>
+                <svg width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M4 6l4 4 4-4z"/></svg>
+            </div>
+            <div class="nav-item work-menu" tabindex="0" aria-haspopup="true" aria-expanded="false" aria-label="Para negócios">
+                <svg width="24" height="24" fill="currentColor" aria-hidden="true"><path d="M4 4h16v16H4z"/></svg>
+                <span>Para negócios</span>
+                <svg width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M4 6l4 4 4-4z"/></svg>
+            </div>
+        </nav>
+    </header>
+    <main class="container">
+        <aside class="sidebar-left">
+            <section class="profile-card">
+                <div class="profile-banner"></div>
+                <div class="profile-circle-large">G</div>
+                <h2>Gustavo Noal</h2>
+                <p class="location">Porto Alegre, Rio Grande do Sul</p>
+                <button class="btn-experience">+ Experiência</button>
+            </section>
+            <section class="sidebar-links">
+                <a href="#" class="sidebar-link">Ver todas as análises</a>
+                <div class="connections">
+                    <span>Conexões</span>
+                    <button class="btn-icon" aria-label="Ampliar sua rede">
+                        <svg width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M8 1v14M1 8h14"/></svg>
+                    </button>
+                </div>
+                <a href="#" class="sidebar-link exclusive">
+                    <p>Acesse ferramentas e insights exclusivos</p>
+                    <p><strong>Experimente o Premium por BRL0</strong></p>
+                </a>
+                <nav class="sidebar-menu">
+                    <a href="#" class="sidebar-menu-item">
+                        <svg width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M4 4h8v8H4z"/></svg>
+                        Itens salvos
+                    </a>
+                    <a href="#" class="sidebar-menu-item">
+                        <svg width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M2 2h12v12H2z"/></svg>
+                        Grupos
+                    </a>
+                    <a href="#" class="sidebar-menu-item">
+                        <svg width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M3 3h10v10H3z"/></svg>
+                        Newsletters
+                    </a>
+                    <a href="#" class="sidebar-menu-item">
+                        <svg width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M1 1h14v14H1z"/></svg>
+                        Eventos
+                    </a>
+                </nav>
+            </section>
+        </aside>
+        <section class="main-content">
+            <section class="post-creation">
+                <div class="post-header">
+                    <div class="profile-circle-small">G</div>
+                    <input type="text" placeholder="Comece uma publicação" aria-label="Comece uma publicação" />
+                </div>
+                <nav class="post-actions">
+                    <button class="post-action video">
+                        <svg width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M6 4l12 6-12 6z"/></svg>
+                        Vídeo
+                    </button>
+                    <button class="post-action photo">
+                        <svg width="20" height="20" fill="currentColor" aria-hidden="true"><rect width="16" height="12" x="2" y="4" rx="2" ry="2"/></svg>
+                        Foto
+                    </button>
+                    <button class="post-action article">
+                        <svg width="20" height="20" fill="currentColor" aria-hidden="true"><rect width="16" height="12" x="2" y="4" rx="1" ry="1"/></svg>
+                        Escrever artigo
+                    </button>
+                </nav>
+                <hr />
+                <div class="sort-by">
+                    Classificar por: <select aria-label="Classificar por">
+                        <option>Populares</option>
+                        <option>Recentes</option>
+                    </select>
+                </div>
+            </section>
+            <section class="recommendations">
+                <h3>Recomendações para você</h3>
+                <ul class="recommendation-list">
+                    <li class="recommendation-item">
+                        <img src="img/cara 1.jpg" alt="Carlos Stella" />
+                        <div class="recommendation-info">
+                            <strong>Carlos Stella</strong>
+                            <p>Gestor de comunidad y eventos - Marketing Orgánico - Marca personal - Administrativo contable - Embajador d...</p>
+                        </div>
+                        <button class="btn-follow">+ Seguir</button>
+                    </li>
+                    <li class="recommendation-item">
+                        <img src="img/cara 2.jpg" alt="Robert Herjavec" />
+                        <div class="recommendation-info">
+                            <strong>Robert Herjavec</strong>
+                            <p>Emmy Award Winner 🏆 Entrepreneur | Investor | Cybersecurity Expert Lead Shark on Shark Tank 🦈 Autho...</p>
+                        </div>
+                        <button class="btn-follow">+ Seguir</button>
+                    </li>
+                    <li class="recommendation-item">
+                        <img src="img/cara 3.jpg" alt="Ahmed Elsewedy" />
+                        <div class="recommendation-info">
+                            <strong>Ahmed Elsewedy</strong>
+                            <p>President & CEO of Elsewedy Electric ↗ Pessoas em alta para seguir</p>
+                        </div>
+                        <button class="btn-follow">+ Seguir</button>
+                    </li>
+                </ul>
+                <a href="#" class="show-more">Exibir mais →</a>
+                <button class="btn-new-post">Ver novas publicações</button>
+            </section>
+        </section>
+        <aside class="sidebar-right">
+            <section class="news">
+                <h3>LinkedIn Notícias</h3>
+                <button class="info-btn" aria-label="Informações">i</button>
+                <ul class="news-list">
+                    <li>
+                        <strong>Assuntos em alta</strong>
+                    </li>
+                    <li>Novo Nordisk e Eurofarma firmam pa...</li>
+                    <li>10 especialistas em IA para seguir no ...</li>
+                    <li>Como preparar sua carreira para a era...</li>
+                    <li>Câmara vota isenção do IR para que...</li>
+                    <li>Weg investirá R$ 1,1 bi para ampliar p...</li>
+                    <li><button class="show-more-news">Exibir mais ▼</button></li>
+                </ul>
+            </section>
+            <section class="games">
+                <h3>Jogos de hoje</h3>
+                <ul class="games-list">
+                    <li>
+                        <div class="game-icon sudoku">1 7</div>
+                        <div class="game-info">
+                            <strong>Mini Sudoku</strong>
+                            <p>Um jogo clássico, em formato mini</p>
+                        </div>
+                        <button class="btn-arrow">→</button>
+                    </li>
+                    <li>
+                        <div class="game-icon zip">Z</div>
+                        <div class="game-info">
+                            <strong>Zip</strong>
+                            <p>Complete o caminho</p>
+                        </div>
+                        <button class="btn-arrow">→</button>
+                    </li>
+                    <li>
+                        <div class="game-icon tango">T</div>
+                        <div class="game-info">
+                            <strong>Tango</strong>
+                            <p>Tudo se encaixa</p>
+                        </div>
+                        <button class="btn-arrow">→</button>
+                    </li>
+                    <li>
+                        <div class="game-icon queens">Q</div>
+                        <div class="game-info">
+                            <strong>Queens</strong>
+                            <p>Corar cada região</p>
+                        </div>
+                        <button class="btn-arrow">→</button>
+                    </li>
+                </ul>
+            </section>
+            <section class="app-promo">
+                <div class="promo-icon">Dica</div>
+                <p>Experimente o LinkedIn no aplicativo do Windows</p>
+            </section>
+            <footer class="footer">
+                <nav class="footer-links">
+                    <a href="#">Sobre</a>
+                    <a href="#">Acessibilidade</a>
+                    <a href="#">Central de Ajuda</a>
+                    <a href="#">Termos e Privacidade</a>
+                    <a href="#">Preferências de anúncios</a>
+                    <a href="#">Publicidade</a>
+                    <a href="#">Serviços empresariais</a>
+                    <a href="#">Baixe o aplicativo do LinkedIn</a>
+                    <a href="#">Mais</a>
+                </nav>
+                <p>LinkedIn Corporation © 2025</p>
+            </footer>
+        </aside>
+    </main>
+</body>
+</html>
